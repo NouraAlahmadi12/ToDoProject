@@ -25,7 +25,7 @@
 - Priority ( high , medium , Low)
 - Status ( complete , pending)
 - TaskError ( Item Not Found , Invalid Value)
-### Use Throws to handle some error
+- Use Throws to handle some error
 
 ## Future iterations
 - Sort Lists by date
