@@ -98,11 +98,11 @@ class Operation {
     
 }
 var myLists = Operation()
-var task1 = Task.init(id: 1, task: "go to abha", date: "18 October", time: "7:43am", priority: .High, status: .complete)
-var task2 = Task.init(id: 2, task: "go to jeddah", date: "23 October", time: "9:35am", priority: .medium, status: .complete)
-var task3 = Task.init(id: 3, task: "return to medinah", date: "27 October", time: "10:00am", priority: .High, status: .pending)
-var travelList = List(title: "travel List", items: [task1 , task2 , task3])
+var travelList = List(title: "travel List", items: [])
 travelList.addItem(newItem: Task.init(id: 4, task: "go to tabuck", date: "25 October", time: "1:00pm", priority: .medium, status: .pending))
+travelList.addItem(newItem: Task.init(id: 2, task: "go to jeddah", date: "23 October", time: "9:35am", priority: .medium, status: .complete))
+travelList.addItem(newItem: Task.init(id: 1, task: "go to abha", date: "18 October", time: "7:43am", priority: .High, status: .complete))
+travelList.addItem(newItem: Task.init(id: 3, task: "return to medinah", date: "27 October", time: "10:00am", priority: .High, status: .pending))
 travelList.orderByComplete()
 travelList.orderByPending()
 do {
@@ -127,9 +127,9 @@ do {
 }
 myLists.createNewList(list: travelList)
 myLists.readAllLists()
-var homework1 = Task.init(id: 1, task: "to do project", date: "14 October", time: "9:00am", priority: .High, status: .complete)
-var homeWork2 = Task.init(id: 35, task: "presentation", date: "14 October", time: "12:00pm", priority: .High, status: .pending)
-homework1.editTask(newTask: "presentation", newDate: "14 October", newTime: "9:00am", newPriority: .medium)
-var homeWorkList = List(title: "home Work List", items: [homework1 , homeWork2])
+var homeWorkList = List(title: "home Work List", items: [])
+homeWorkList.addItem(newItem: Task.init(id: 1, task: "to do project", date: "14 October", time: "9:00am", priority: .High, status: .complete))
+homeWorkList.addItem(newItem: Task.init(id: 35, task: "presentation", date: "14 October", time: "12:00pm", priority: .High, status: .pending))
 myLists.createNewList(list: homeWorkList)
 myLists.readAllLists()
+
