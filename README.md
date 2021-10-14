@@ -1,10 +1,8 @@
 # ToDoProject
 
-##List your Task..
+# About my project (Overview)
 
-##About my project (Overview)
-
-### it's program that allow you to list your task and print it 
+- it's program that allow you to list your task and print it 
 
 ## Usage
 - Add new task -  func addItem (newItem : Task)
@@ -25,7 +23,7 @@
 - Priority ( high , medium , Low)
 - Status ( complete , pending)
 - TaskError ( Item Not Found , Invalid Value)
-### Use Throws to handle some error
+- Use Throws to handle some error
 
 ## Future iterations
 - Sort Lists by date
